@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>선택사항을 직접 입력하세요.</h2>
+    <fieldset>
+        <legend>학술지정보</legend>
+        전공 분야 : <input list = "majorlist" name ="major"
+        id="major">
+        <datalist id="majorlist">
+            <option value = "빅데이터 전공">
+            <option value = "스마트iot 전공">
+            <option value = "콘텐츠it 전공">        
+        </datalist>
+        <br>
+        등록일 :<input value="연도-월-일"
+        min="2020-01-01" max="2022-12-31">
+        <br>
+        메일 수신 : <input type="radio" name="chk_mail" value="수신동의">수신동의
+        <input type="radio" name="chk_mail" value="수신거부">수신거부
+        <br>
+        <input type = "submit" value="전송">
+        <input type ="reset" value="취소">
+    </fieldset>
+</body>
+</html>

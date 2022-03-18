@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+    <style>
+        table{
+            width:100%;
+        }
+        table,th,td{
+            border:1px solid #bcbcbc;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"><strong>회원 가입</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><strong>아이디</strong></th>
+                <td><input type="text" name="id" required></td>
+            </tr>
+            <tr>
+                <th><strong>패스워드</strong></th>
+                <td><input type="text" name="password" required></td>
+            </tr>
+            <tr>
+                <th><strong>성별</strong></th>
+                <td><input type="radio" name="gender" value="male">남
+                    <input type="radio" name="gender" value="female">여
+                </td>
+
+            </tr>
+            <tr>
+                <th><strong>국적</strong></th>
+                <td><input list = "countrylist" name ="country"
+                    id="country"><datalist id="countrylist">
+                    <option value = "한국">
+                    <option value = "미국">
+                    <option value = "일본">        
+                </datalist></td>
+            </tr>
+            <tr>
+                <th><strong>가족사항</strong></th>
+                <td><input type="checkbox" name ="family" value="parent" />부모
+                    <input type="checkbox" name ="family" value="bro" />형제자매
+                    <input type="checkbox" name ="family" value="lover" />배우자
+                    <input type="checkbox" name ="family" value="child" />자식</td>
+            </tr>
+            <tr>
+                <th><strong>이력서</strong></th>
+                <td><input type="file" accept="*.*"/></td>
+            </tr>
+            <tr>
+                <th><strong>생년월일</strong></th>
+                <td><input value="연도-월-일"
+                    min="2020-01-01" max="2022-12-31"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><input type = "submit" value="가입">
+                    <input type ="reset" value="재작성"></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
